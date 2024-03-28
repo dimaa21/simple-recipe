@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Simple Omelette Recipe </title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./public/css/main.min.css">
+    <link rel="icon" href="./public/img/icon.png" type="x/icon">
 
 </head>
 <body>
     
- 
+    <div class="recipe">
+        <img class="main-img" 
+        
+        srcset="./public/img/image-omelette.jpeg 320w,
+        ./public/img/image-omelette.jpeg 480w,
+        ./public/img/image-omelette.jpeg 800w"
+
+        sizes="(max-width: 320px) 280px,
+                (max-width: 480px) 440px,
+                800px"
+
+        src="./public/img/image-omelette.jpeg" alt="">
+
+        <p class="main-text"> Simple Omelette Recipe </p>
+
+    </div>
 
 </body>
 </html>
