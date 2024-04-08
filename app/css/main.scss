@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+$main-background: hsl(0, 0%, 100%);
+
 
 * {
     background-color: hsl(30, 54%, 90%);
@@ -9,11 +11,18 @@
 }
 
 .recipe {
-    background-color: hsl(0, 0%, 100%);
+    background-color: $main-background;
     max-width: 750px;
     margin: 200px auto; 
     border-radius: 20px;
     padding: 30px;
+
+    .main-content,
+    .ingredients,
+    .instructions,
+    .nutrilion {
+        background-color: $main-background;
+    }
 
     .main-img {
         max-width: 100%;
@@ -24,9 +33,8 @@
 
     .main-text,
     .main-desc {
-        background-color: hsl(0, 0%, 100%);
         margin: 25px 10px;
-        
+        background-color: $main-background;
     }
 
     .main-text {
@@ -34,6 +42,7 @@
         font-weight: 500;
         font-family: Young Serif, sans-serif;
     }
+
 
     .list-time {
         background-color: hsl(330, 100%, 98%);
@@ -70,7 +79,6 @@
     }
 
     .ingredients {
-        background-color: hsl(0, 0%, 100%);
         margin: 40px 0;
 
         .main-text {
@@ -78,30 +86,83 @@
             font-size: 30px;
         }
 
-
         .list-ingredients,
         .list-2 {
+            background-color: $main-background;
             color: hsl(30, 10%, 34%);
-            background-color: hsl(0, 0%, 100%);
             margin: 10px 0;
         }
     }
 
     hr {
         opacity: 0.5;
-        margin: 0 20px;
+        margin: 0 25px;
     }
 
     .instructions {
-        ol > li {
-            color: #000;
+        margin-bottom: 25px;
+
+        .main-text {
+            color: hsl(14, 45%, 36%);
+            font-size: 30px;
+        }
+
+        .list-3 {
+            list-style-type: none;
+            color: hsl(30, 10%, 34%);
+            margin: 15px 0 0 -15px;
+            line-height: 1.5;
+            
+            span {
+                font-weight: bold;
+                margin-left: 20px;
+            }
         }
 
         .list-instructions,
         .list-instructions > li,
         .list-instructions > span,
         .list-instructions > li > span {
-            background-color: hsl(0, 0%, 100%);
+            background-color: $main-background;
+        }
+    }
+
+    .nutrilion {
+
+        .main-text {
+            color: hsl(14, 45%, 36%);
+            font-size: 30px;
+        }
+        
+        .table {
+            background-color: $main-background;
+
+            table {
+                background-color: $main-background;
+                margin: 0 10px;
+                width: 96%;
+                border-collapse: collapse;
+
+                td,
+                span {
+                    background-color: $main-background;
+                    border-bottom: 1px solid #ccc; 
+                    max-width: 85%;
+                    padding: 15px 25px;
+                    margin: 0 5px;
+                    width: auto; 
+                    height: auto;
+                }
+
+                td {
+                    color: hsl(30, 10%, 34%);
+                }
+
+                span {
+                    color: hsl(14, 45%, 36%);
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
