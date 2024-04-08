@@ -3,29 +3,108 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
     background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
 }
 
 .recipe {
-    width: 850px;
-    height: 2500px;
     background-color: hsl(0, 0%, 100%);
-    margin: 250px auto;
-    border-radius: 25px;
+    max-width: 750px;
+    margin: 200px auto; 
+    border-radius: 20px;
+    padding: 30px;
 
     .main-img {
-        width: 800px;
-        height: 350px;
-        margin: 25px;
-        border-radius: 15px;
+        max-width: 100%;
+        width: auto; 
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .main-text,
+    .main-desc {
+        background-color: hsl(0, 0%, 100%);
+        margin: 25px 10px;
+        
     }
 
     .main-text {
-        background-color: hsl(30, 54%, 95%);
+        font-size: 40px;
+        font-weight: 500;
+        font-family: Young Serif, sans-serif;
+    }
+
+    .list-time {
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 20px;
+        margin: 20px 0;
+        padding: 5px;
+
+        .main-time,
+        .main-list,
+        .main-list > li, b {
+            background-color: hsl(330, 100%, 98%);
+        }
+
+        .main-time {
+            font-weight: 600;
+            font-size: 20px;
+            padding: 0 20px;
+            color: #804270;
+        }
+
+        .main-list {
+            color: #804270;
+
+            .list-1 {
+                margin: 10px 0;
+            }
+
+            span {
+                background-color: hsl(330, 100%, 98%);
+                color: hsl(30, 10%, 34%);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .ingredients {
+        background-color: hsl(0, 0%, 100%);
+        margin: 40px 0;
+
+        .main-text {
+            color: hsl(14, 45%, 36%);
+            font-size: 30px;
+        }
+
+
+        .list-ingredients,
+        .list-2 {
+            color: hsl(30, 10%, 34%);
+            background-color: hsl(0, 0%, 100%);
+            margin: 10px 0;
+        }
+    }
+
+    hr {
+        opacity: 0.5;
+        margin: 0 20px;
+    }
+
+    .instructions {
+        ol > li {
+            color: #000;
+        }
+
+        .list-instructions,
+        .list-instructions > li,
+        .list-instructions > span,
+        .list-instructions > li > span {
+            background-color: hsl(0, 0%, 100%);
+        }
     }
 }
+
 
 
